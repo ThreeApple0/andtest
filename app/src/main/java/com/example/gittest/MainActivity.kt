@@ -8,24 +8,56 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
+
+    fun cul(i:Int){
+        var toast:Toast = Toast.makeText(this,"값이 없습니다",Toast.LENGTH_SHORT)
+
+        if( num1.text.toString() == "" || num2.text.toString() == ""){
+            toast.cancel()
+            toast.show()
+            return
+        }
+
+        var num1_int:Int = (num1.text).toString().toInt()
+        var num2_int:Int = (num2.text).toString().toInt()
+
+        if(i==1){
+            res.setText((num1_int + num2_int).toString())
+        }
+        else if(i==2){
+            res.setText((num1_int - num2_int).toString())
+        }
+        else if(i==3){
+            res.setText((num1_int * num2_int).toString())
+        }
+        else if(i==4){
+            res.setText((num1_int.toFloat() / num2_int).toString())
+        }
+    }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        var toast:Toast = Toast.makeText(this.applicationContext,"",Toast.LENGTH_SHORT)
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bt1.setOnClickListener {
-            toast.cancel()
-            toast = Toast.makeText(this.applicationContext,"테스트 A",Toast.LENGTH_SHORT)
-            toast.setGravity(Gravity.BOTTOM,0,0);
-            toast.show()
+
+        p_bt.setOnClickListener(){
+            cul(1)
         }
-        bt2.setOnClickListener {
-            toast.cancel()
-            toast = Toast.makeText(this.applicationContext,"테스트 B",Toast.LENGTH_SHORT)
-            toast.setGravity(Gravity.CENTER,0,0);
-            toast.show()
+        m_bt.setOnClickListener(){
+            cul(2)
         }
+        x_bt.setOnClickListener(){
+            cul(3)
+        }
+        n_bt.setOnClickListener(){
+            cul(4)
+        }
+
     }
+
+
+
 }
