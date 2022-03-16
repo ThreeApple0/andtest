@@ -69,34 +69,46 @@
 
         <Button
             android:id="@+id/p_bt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="+"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/m_bt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="-" />
+            android:text="-"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="3dp"/>
 
         <Button
             android:id="@+id/x_bt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="*"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="3dp"/>
 
         <Button
             android:id="@+id/n_bt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="/"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="3dp"/>
 
     </LinearLayout>
 
