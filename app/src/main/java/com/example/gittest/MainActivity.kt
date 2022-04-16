@@ -7,7 +7,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    // testtest
 
 
     fun cul(i:Int){
