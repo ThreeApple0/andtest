@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         }
         n_bt.setOnClickListener(){
             cul(4)
+
         }
 
     }
